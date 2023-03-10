@@ -75,7 +75,7 @@ h2{
 	color: var(--pinkish);
 }
 
-#about img:nth-of-type(1){
+#about .board{
 	border: solid .5vw var(--pinkish);
 	width: 35vw;
 }
@@ -104,20 +104,46 @@ h2{
 
 #downloads{
 	background-color: var(--yellowish);
-	overflow: scroll;
+	display: flex;
+	justify-content: flex-start;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 #downloads h2{
 	font-family: picnic;
 	color: var(--blueish);
 	padding-bottom: 2vw;
+	padding: 2vw;
 }
 
 #downloads a {
 	font-family: sans-black;
 	font-size: 2vw;
 	padding: 1vw;
-	color: var(--blueish);
+	margin: 1vw;
+	color: var(--yellowish);
+	background-color: var(--blueish);
+
+}
+
+#downloads p{
+	font-family: sans-black;
+	font-size: 2vw;
+	padding: 1vw;
+	background-color: var(--blueish);
+	color: var(--yellowish);
+}
+
+.vidBlock{
+	width: 60vw;
+	background-color: var(--blueish);	
+
+}
+
+iframe{
+	width: 60vw;
+	height: auto;
 }
 
 #logo{
@@ -140,8 +166,14 @@ h2{
 	height: auto;
 }
 
-.suggestion a{
+#suggestion a{
 	background-color: black;
 }
 
+.start{
+	margin: 7vw 0 0 0;
+}
 
+.end{
+	margin: 0 0 10vw 0;
+}

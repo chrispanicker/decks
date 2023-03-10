@@ -1,17 +1,17 @@
-p{
+#about p{
 	font-family: sans-black;
 	font-size: 2vw;
 	margin: 5vw 15vw 15vw 15vw;
 	color: var(--pinkish);
-  background-color: var(--reddish);
+  	background-color: var(--reddish);
 }
 
-p #logo{
+#about p #logo{
 	width: 10vw;
 	transition: width .3s ease;
 }
 
-p #logo:hover{
+#about p #logo:hover{
 	width: 11vw;
 }
 

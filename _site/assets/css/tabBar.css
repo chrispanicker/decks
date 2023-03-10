@@ -62,8 +62,15 @@ span{
 }*/
 
 .content{
+	overflow-y: scroll;
+	overflow-x: hidden;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	position: relative;
 	display: none;
+	font-family: sans-blacks;
+	color: black;
 }
 
 div:nth-of-type(2){

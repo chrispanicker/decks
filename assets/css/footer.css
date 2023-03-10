@@ -45,6 +45,7 @@ header #processEl{
 }
 
 header #aboutEl{
+	padding: 0 0 0 -3vh;
 	transform: rotate(-2deg);
 	border: none;
 	background-color: var(--pinkish);
