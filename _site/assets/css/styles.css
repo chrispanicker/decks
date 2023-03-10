@@ -1,0 +1,136 @@
+html{
+	scroll-behavior: smooth;
+		height: 100vh;
+}
+
+body {
+ 	background-image: url("../media/images/1xbkg.png");
+ 	background-size: cover;
+ 	background-attachment: fixed;
+ 	margin: 0;
+ 	padding: 0;
+}
+
+section{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+span{
+	display: flex;
+	width: fit-content;
+	height: 100vh;
+}
+
+#process a{
+	background-color: white;
+	border-style: solid;
+	border-width: .1vw;
+	border-color: black;
+	box-sizing: border-box;
+	color: white;
+	font-family: bodoni-mt;
+	font-size: 6vw;
+	transition: font-size .2s ease;
+	margin: 3vw;
+	padding: 0 1vw 0 1vw;
+	text-shadow: -1px 1px 0 #000,
+			  1px 1px 0 #000,
+				 1px -1px 0 #000;
+}
+
+#process a:hover{
+	font-size: 6.2vw;
+	cursor: pointer;
+}
+
+
+h2{
+	font-size: 12vw;
+	margin: 0;
+}
+
+#process h2:nth-of-type(1){
+	margin: 10vw 0 0 0;
+}
+
+#about{
+	overflow: scroll;
+	justify-content: flex-start;
+}
+
+#about h2{
+	padding-top: 20vh;
+	font-family: hobeaux-roco;
+	color: var(--pinkish);
+}
+
+
+#process h2{
+	font-family: bodoni-mt;
+	color: white;
+			text-shadow: -1px 1px 0 #000,
+			  1px 1px 0 #000,
+				 1px -1px 0 #000;
+}
+
+#process{
+	background-image: url("../media/images/process.png");
+	background-size: cover;
+	overflow: scroll;
+	justify-content: flex-start;
+}
+
+::-webkit-scrollbar:horizontal{}{
+	display: none;
+}
+
+
+
+#downloads{
+	background-color: var(--yellowish);
+	overflow: scroll;
+}
+
+#downloads h2{
+	font-family: picnic;
+	color: var(--blueish);
+	padding-bottom: 2vw;
+}
+
+#downloads a {
+	font-family: sans-black;
+	font-size: 2vw;
+	padding: 1vw;
+	color: var(--blueish);
+}
+
+#logo{
+	width: 20vw;
+	height: auto;
+	transition: width .3s ease;
+}
+
+#logo:hover{
+	width: 22vw;
+	cursor: pointer;
+}
+
+#skateBar{
+	pointer-events: none;
+	position: fixed;
+	left: -20vw;
+	bottom: 0;
+	width: 20vw;
+	height: auto;
+}
+
+.suggestion a{
+	background-color: black;
+}
+
+

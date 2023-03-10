@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Popsicle</title>
+    <link rel="stylesheet" href=/assets/css/process.css>
+    <link rel="stylesheet" href=/assets/css/colors.css>
+    <link rel="stylesheet" href=/assets/css/fonts.css>
+    <link rel="stylesheet" href=/assets/css/tabBar.css>
+    <link rel="stylesheet" href=/assets/css/zoom.css>
+    <link rel="stylesheet" href=/assets/css/hover.css>
+    <script type="module" src=/assets/js/process.js></script>
+    <script type="module" src=/assets/js/tabBar.js></script>
+    <script type="module" src=/assets/js/footnotes.js></script>
+      
+  </head>
+    <main id="main">
+      <a href="./index.html" id="logo">
+        <img src="./assets/media/images/logo.png">
+      </a>
+
+
+      <section id="zoom">
+        <img id="imageToChange" src=/assets/media/images/popsicle.PNG>
+      </section>
+
+      <section>
+      <h1>THE POPSICLE</h1>
+      <h2 class="heads">PREVIEW</h2>
+      <div id="preview">
+        <img id="imageToChange" class="zoom-me"src=/assets/media/images/popsicle.PNG>
+        <video autoplay muted controls src=""></video>
+      </div>
+      </section>
+
+      <section>
+        <div class="tab-bar">
+          <button>DESCRIPTION</button>
+          <button>STEPS</button>
+          <button>RESOURCE</button>
+          <button>GALLERY</button>
+        </div>
+        <span>
+          <div class="tabs">
+            <div class="content" id="description">
+              <p>THE ICONIC, MOST COMMON FORM OF SKATE DECKS.</p>
+            </div>
+            <div class="content" id="steps">
+                <P>STEP 1: PLANNING <BR> I MEASURED MY PREFERRED SKATEBOARDS I'VE OWNED AND MADE A <SPECIAL>SCHEMATIC</SPECIAL> OF WHAT I'D IDEALLY WANT IN A CLASSIC POPSICLE DECK.</P>
+  <P>STEP 2: GATHERING <BR> USING BENDING PLYS FROM THE PARSONS WOODSHOP, I <SPECIAL>CUT THEM DOWN</SPECIAL> TO BE SLIGHTLY OVERSIZED AT <SPECIAL>9" X 34."</SPECIAL></P>
+  <P>STEP 3: PRINTING <BR> FOR THE DECK ART, I DECIDED TO SILKSCREEN A <SPECIAL>GRAPHIC</SPECIAL> ONTO THE WOOD. I SPECIFICALLY CHOSE TO PRINT ON THE FLAT PLYS BECAUSE IT'S EASIER TO PRINT ON BEFORE MOLDING THE DECK TO IT'S NOSE AND TAIL SHAPE.</P>
+            </div>
+
+            <div class="content" id="resource">
+              <p></p>
+            </div>
+            <div class="grid content" id="gallery">
+              
+            </div>
+          </div>  
+        </span>
+      </section>
+
+      <section>
+        <h2 class="heads">ALL PROJECTS</h2>
+        <span class="projectList">
+          <h2><a href="/popsicle.html">THE POPSICLE</a></h2>
+          <h2><a href="/couch.html">THE COUCH</a></h2>
+          <h2><a href="/chair.html">THE CHAIR</a></h2>
+          <h2><a href="/chairUh.html">THE CHAIR?</a></h2>
+          <h2><a href="/chairUh.html">THE CART</a></h2>
+          <h2><a href="/chairUh.html">THE BED</a></h2>
+          <h2><a href="/chairUh.html">THE TV</a></h2>
+          <h2><a href="/chairUh.html">THE TOILET</a></h2>
+          <h2><a href="/chairUh.html">THE CROWBAR</a></h2>
+          <h2><a href="/chairUh.html">THE SWORD</a></h2>
+          <h2><a href="/chairUh.html">THE STOPSIGN</a></h2>
+          <h2><a href="/chairUh.html">THE MINIRAMP</a></h2>
+          <h2 class="suggestion"><a href="/suggestion.html">SUGGEST ONE!</a></h2>
+        </span>
+      </section>
+    </main>
+    <script type="text/javascript">
+      let allFootnotes = document.querySelectorAll("special");
+      let bothPreviews = document.querySelectorAll("#imageToChange");
+      let videoEl = document.querySelector("#preview video");
+      let main = document.querySelector("#main");
+      let mediaArray = ['/assets/media/images/popsicle.PNG','/assets/media/videos/woodcut.MOV','/assets/media/images/wood.jpeg','/assets/media/images/silkscreen.jpeg']
+      let galleryEl = document.querySelector("#gallery");
+      for(let i=0; i<mediaArray.length; i++){
+        if(mediaArray[i].includes("MOV")){
+             let vid = document.createElement("video");
+             vid.src = mediaArray[i];
+             vid.autoplay = true;
+             vid.muted = true;
+             vid.controls = true;
+             vid.preload = true;
+             galleryEl.append(vid);
+          } else {
+            let img = document.createElement('img');
+            img.src = mediaArray[i]
+            galleryEl.append(img);
+          }
+      }
+      for(let i=0; i<allFootnotes.length; i++){
+        allFootnotes[i].addEventListener("mouseover", (e) =>{
+        if(mediaArray[i].includes("MOV")){
+          bothPreviews[0].style.display = "none";
+          bothPreviews[1].style.display = "none"
+          videoEl.style.display = "block"
+          videoEl.style.border = "border: .1vw solid black;"
+          videoEl.src = mediaArray[i];
+        } else {
+          bothPreviews[0].src = mediaArray[i];
+          bothPreviews[1].src = mediaArray[i];
+          bothPreviews[0].style.display = "block";
+          bothPreviews[1].style.display = "block";
+          videoEl.style.display = "none"
+        }
+      });
+
+      allFootnotes[i].addEventListener("mouseleave", (e) =>{
+
+      });
+      }
+    </script>
+  </body>
+</html>

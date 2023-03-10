@@ -1,0 +1,148 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+a{
+	color: white;
+	text-decoration: none ;
+}
+
+#main{
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../media/images/process.png");
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	z-index: -2;
+	}
+
+#logo img{
+	width: 5vw;
+	height: auto;
+	transition: width .2s ease;
+	position: fixed;
+	align-self: center;
+	left: 45vw;
+	bottom: 1vh;
+	z-index: 100;
+}
+
+#logo img:hover{
+	width: 5.5vw;
+	cursor: pointer;
+}
+
+
+h2{
+	margin: 1vw;
+	width: fit-content;
+	padding: 0 1vw 0 1vw;
+	font-size: 2vw;
+	transition: font-size .2s ease;
+	font-family: bodoni-mt;	
+	color: white;
+	background-color: white;
+	border-style: solid;
+	border-color: black;
+	border-width: .1vw;
+	text-shadow: -1px 1px 0 #000,
+			  1px 1px 0 #000,
+				 1px -1px 0 #000;
+
+}
+
+h2:hover{
+	font-size: 2.2vw;
+}
+
+p{
+	width: fit-content;
+	height: fit-content;
+	font-size: 2vw;
+	font-family: sans-black;
+	background-color: white;
+/*	border-style: solid;
+	border-color: black;
+	border-width: .1vw;*/
+	padding: 1vw;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: auto;
+}
+
+video{
+	width: 20vw;
+}
+
+
+h1{
+	font-family: bodoni-mt;
+	font-size: 5vw;
+	margin: 1vw 0 1vw 0;
+	padding: 0 1vw 0 1vw;
+	color: white;
+	background-color: white;
+	border: solid .1vw black;
+	width: fit-content;
+	text-shadow: -1px 1px 0 #000,
+			  1px 1px 0 #000,
+				 1px -1px 0 #000;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.grid img{
+	height: 15vh;
+}
+
+.grid video{
+	height: 15vh;
+}
+
+.projectList{
+	height: 80vh;
+	width: 15vw;
+	display: flex;
+	flex-direction: column;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	align-items: center;
+	justify-content: flex-start;
+		border-style: solid;
+	border-color: black;
+	border-width: .1vw;
+	background-color: white;
+}
+
+.heads{
+	margin: 0 0vw -.1vw 0;
+	color: black;
+	border-style: solid;
+	border-color: black;
+	border-width: .1vw;
+	text-shadow: none;
+	z-index: 10;
+}
+.heads:hover{
+	font-size: 2vw;
+}
+
+.suggestion{
+	background-color: black;
+}
+

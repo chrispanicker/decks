@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'baldur';
+  src:  url('../typefaces/baldur.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'basteleur';
+  src:  url('../typefaces/basteleur-bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'bodoni-mt';
+  src:  url('../typefaces/bodoni-cond.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'hobeaux-roco';
+  src:  url('../typefaces/hobeaux_rococeaux.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'hobeaux';
+  src:  url('../typefaces/hobeaux-reg.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'picnic';
+  src:  url('../typefaces/picnic-reg.otf') format('otf');
+}
+
+@font-face {
+  font-family: 'sans-black';
+  src:  url('../typefaces/sans-black.woff') format('woff');
+}
+

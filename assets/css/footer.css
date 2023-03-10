@@ -1,0 +1,60 @@
+header{
+	padding: 2vw;
+	position: fixed;
+	width: 100vw;
+	height: auto;
+	top: 0;
+	opacity: 0%;
+	transition: opacity .3s ease;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+button{
+	border: none;
+	font-size: 2vw;
+	padding: 0 1vw 0 1vw;
+/*	transition: font-size .5s ease, margin .5s ease;*/
+}
+
+header #logo{
+	width: 10vw;
+}
+
+header #logo:hover{
+	width: 11vw;
+	cursor: pointer;
+}
+header button:hover{
+	cursor: pointer;
+}
+
+header #processEl{
+	transform: rotate(5deg);
+	color: black;
+	background-image: none;
+	background-color: white;
+	border-style: solid;
+	border-width: .1vw;
+	border-color: black;
+	box-sizing: border-box;
+	font-family: bodoni-mt;
+/*	text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white;*/
+	letter-spacing: .1vw;
+}
+
+header #aboutEl{
+	transform: rotate(-2deg);
+	border: none;
+	background-color: var(--pinkish);
+	font-family: hobeaux-roco;
+	color: var(--reddish);
+}
+
+header #downloadsEl{
+	background-color: var(--blueish);
+	transform: rotate(2deg);
+	font-family: picnic;
+	color: var(--yellowish);
+}

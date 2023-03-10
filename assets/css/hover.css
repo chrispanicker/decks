@@ -1,0 +1,10 @@
+special{
+	color: rgba(0,0,0, .4);
+	cursor: context-menu;
+	transition: font-size .2s ease;
+	font-size: 2vw;
+}
+
+special:hover{
+	font-size: 2.1vw;
+}
