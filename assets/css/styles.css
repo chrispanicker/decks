@@ -1,6 +1,12 @@
 html{
 	scroll-behavior: smooth;
 		height: 100vh;
+
+}
+
+#main{
+	margin: 0;
+	padding: 0;
 }
 
 body {
@@ -67,6 +73,11 @@ h2{
 	padding-top: 20vh;
 	font-family: hobeaux-roco;
 	color: var(--pinkish);
+}
+
+#about img:nth-of-type(1){
+	border: solid .5vw var(--pinkish);
+	width: 35vw;
 }
 
 
